@@ -14,12 +14,20 @@ header {
     width: 100%;
 }
 .wave {
+    visibility: visible;
     width: 150%;
     height: 25vh;
     position: relative;
     top: -2.75em;
-    left: 0px;
+    left: -1000px;
     margin-left: -40vw;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .wave {
+        visibility: hidden;
+    }
 }
 .wave2{
     animation: hu__hu__ infinite 2s ease-in-out;

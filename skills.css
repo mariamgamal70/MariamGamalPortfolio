@@ -1,5 +1,6 @@
 #skills{
     margin-bottom: 5em;
+    overflow-y: hidden;
 }
 #skillscontent{
     display: flex;
@@ -8,6 +9,7 @@
     align-content: center;
     flex-wrap: wrap;
 }
+
 .circlecontainer{
     display: flex;
     justify-content: center;
