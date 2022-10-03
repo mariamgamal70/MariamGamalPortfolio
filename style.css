@@ -1,6 +1,5 @@
 html {
     scroll-behavior: smooth !important;
-    overflow-y: hidden;
 }
 * {
     margin: 0;
@@ -9,6 +8,7 @@ html {
     box-sizing: border-box;
     overflow-wrap: anywhere;
     scroll-behavior: smooth !important;
+    overflow-x: hidden;
 }
 body{
     overflow-x: hidden;
