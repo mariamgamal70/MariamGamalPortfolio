@@ -1,0 +1,146 @@
+@media only screen and (max-width: 480px) {
+    .textin {
+        margin-left: 10vw;
+    }
+    .icons {
+        position: relative;
+        left: 15%;
+    }
+}
+header {
+    position: relative;
+    top: 15vh;
+    font-size: 2rem;
+    width: 100%;
+}
+.wave {
+    width: 150%;
+    height: 25vh;
+    position: relative;
+    top: -2.75em;
+    left: 0px;
+    margin-left: -40vw;
+}
+.wave2{
+    animation: hu__hu__ infinite 2s ease-in-out;
+}
+.text {
+    position: relative;
+    margin: auto;
+    animation-name: leFadeInRight;
+    animation-duration: 1s;
+}
+.image {
+    position: relative;
+    margin: auto;
+    padding-left: 20vw;
+    align-items: stretch;
+}
+section {
+    position: relative;
+    top: 10vh;
+    width: 100%;
+    padding: 10px 30px 50px 30px;
+    margin-bottom: 2%;
+    height: fit-content;
+}
+.blendsectionup{
+    content: '';
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, white 50%,transparent);
+    position: relative;
+    top:6rem;
+}
+.blendsectiondown{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, white 50%, transparent);
+    position: relative;
+    top: 30px;
+}
+.textin h3{
+    display:inline-flex;
+    line-height: 90px;
+    flex-wrap: wrap;
+}
+
+#beforedynamictext{
+    flex: 1 0 auto ;
+}
+
+.dynamictext{
+    height:90px;
+    font-size: 85%;
+    overflow: hidden;
+    color: #e805cd;
+    margin: 0 10px;
+}
+.dynamictext li{
+    position: relative;
+    padding: 0;
+    text-align: left;
+    top:0;
+    width: fit-content;
+    line-height: 90px;
+}
+.dynamictext li::after{
+content: '';
+position: absolute;
+height: 100%;
+width: 100%;
+border-left:2px solid #e805cd;
+left: 0;
+background: #fdbd3c;
+}
+#webdev::after{
+animation: typing 3s steps(13) infinite;
+}
+#softeng::after{
+animation: typing 3s steps(17) infinite;
+}
+#bioeng::after {
+    animation: typing 3s steps(19) infinite;
+}
+#freelancer::after{
+    animation: typing 3s steps(9) infinite;
+}
+#webdev{
+        animation: slide 12s steps(4) infinite;
+}
+#softeng{
+        animation: slide 12.5s steps(4) infinite;
+}
+#bioeng{
+        animation: slide 12.35s steps(4) infinite;
+}
+#freelancer{
+        animation: slide 12s steps(4) infinite;
+}
+.logos img:hover {
+box-shadow:0 0 30px 5px yellow;
+border-radius: 1rem;
+}
+@keyframes typing{
+    40%,60%{
+        left: calc(100% + 30px);
+    }
+    100%{
+        left:0;
+        margin: 0 -50px 0 0;
+    }
+}
+@keyframes slide{
+    100%{
+        top:-360px;
+    }
+}
+.hu__hu__ {
+    animation: hu__hu__ infinite 2s ease-in-out
+}
+
+@keyframes hu__hu__ {
+    50% {
+        transform: translateY(30px)
+    }
+}

@@ -1,0 +1,91 @@
+html {
+    scroll-behavior: smooth !important;
+}
+* {
+    margin: 0;
+    font-family: 'Lemonada';
+    padding: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+    scroll-behavior: smooth !important;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #fdbd3c;
+    scroll-behavior: smooth !important;
+}
+h1,h3{
+    font-family: 'Lemon';
+    font-size: 50px;
+}
+h3{
+    font-size: 1.5rem;
+    position: relative;
+    left: -3rem;
+}
+section h3{
+    color: #008BF8;
+    padding:20px 0;
+    text-shadow: 2px 3px 5px #000;
+    letter-spacing: 3px;
+}
+section h1{
+    color: #008BF8;
+    position: relative;
+    text-shadow: 5px 5px 5px #000;
+    letter-spacing: 3px;
+    padding-left: 20px;
+}
+.sectiontitles{
+    margin: 20px 0;
+}
+.icons{
+    text-align: left;
+    width: fit-content;
+}
+.logoicons{
+    position: relative;
+    height: 2%;
+    width: 2rem;
+}
+.logos{
+    margin-right: 15px;
+}
+
+/*about me section*/
+#aboutmecontainer1, #aboutmecontainer2{
+    display: flex;
+    justify-content: space-around;
+}
+#aboutme{
+    background: #fffffc;
+    height: fit-content;
+    /*border: #fdbd3c;
+    border-style: groove;
+    border-width: 5vw;*/
+}
+/*#aboutme p{
+    color: #fdbd3c;
+}*/
+#aboutmetext1 , #aboutmetext2{
+    width: 60%;
+}
+#aboutmeimg1 img , #aboutmeimg2 img{
+    width:20vw;
+    height: 25vw;
+}
+#aboutmeimg1, #aboutmeimg2 {
+    height: fit-content;
+    width: fit-content;
+}
+
+@keyframes leFadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1
+    }
+}

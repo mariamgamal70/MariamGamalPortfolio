@@ -1,0 +1,92 @@
+#skills{
+    margin-bottom: 5em;
+}
+#skillscontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.circlecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    width: fit-content;
+    padding: 30px 60px;
+}
+
+.circlewrap{
+    border: 1px solid #cdcbd0;
+    border-radius: 50%;
+    width:160px;
+    height:160px ;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),-6px -6px 10px -1px rgba(225,225,225,0.7);
+    background: #cdcbd0 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circlewrap::before{
+    content:'';
+    width: 120px;
+    height: 120px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+}
+.progressvalue{
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    color:rgb(190, 8, 246)
+}
+.skilltitle{
+    font-size: 20px;
+    font-weight: 700;
+    color: #008BF8;
+}
+circle{
+    fill: none;
+    stroke: #008BF8;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+}
+#htmlcircle  circle{
+    animation: animhtml 2s linear forwards;
+}
+#csscircle circle{
+    animation: animcss 2s linear forwards;
+}
+#jscircle circle {
+    animation: animjs 2s linear forwards;
+}
+#cppcircle circle {
+    animation: animcpp 2s linear forwards;
+}
+svg{
+    position: absolute;
+}
+@keyframes animhtml{
+    100%{
+        stroke-dashoffset:0;
+    }
+}
+@keyframes animcss {
+    100% {
+        stroke-dashoffset: 141.6
+    }
+}
+@keyframes animjs {
+    100% {
+        stroke-dashoffset: 188.8;
+    }
+}
+@keyframes animcpp {
+    100% {
+        stroke-dashoffset: 94.4;
+    }
+}

@@ -1,0 +1,117 @@
+form{
+    background-color: #ffd07b;
+    margin: auto;
+    border-radius: 1rem;
+    width: fit-content;
+    height:fit-content;
+    box-shadow: 0 0 40px -10px #000;
+    color:#CA3CFF;
+    padding:30px;
+    display: none;
+    
+}
+input, textarea{
+    position: relative;
+    width: 25vw;
+    outline: none;
+    border-bottom: 3px solid #CA3CFF;
+    border-top: none;border-left: none;border-right:none ;
+    border-radius: 0.5rem;
+    padding: 10px 0;    
+    float: left;
+}
+/*button{
+    width: 50%;
+    height: 3em;
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 0.5em;
+}*/
+button{
+    color: #CA3CFF;
+        border-radius: 30px;
+        font-weight: bold;
+        border: 2px solid #CA3CFF;
+        font-size: 0.9em;
+        width: 8em;
+        padding: 0.9em 0em;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+}
+button:hover{
+    background-color: #CA3CFF;
+        transition: 0.5s;
+        color: #FFF;
+}
+#contactmecontainer{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2em;
+}
+label{
+    font-weight: 600;
+}
+#contactme h1{
+    text-align: center;
+}
+#contactme {
+    position: relative;
+    top:1em;
+}
+#clicktocontact{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom:150px;
+    width: fit-content;
+    background-color: #02cd57;
+    font-size: 40px;
+    padding:15px;
+    border-radius: 1em;
+    cursor: pointer;
+}
+#clicktocontact:hover{
+    background-color: #61e699;
+    box-shadow: 0 0 30px 5px yellow;
+}
+.moveFromBottom {
+    animation-name: moveFromBottom;
+    animation-iteration-count:1;
+    animation-duration: 1s;
+}
+
+.fadeOutTop {
+    animation-name: fadeOutTop;
+    animation-duration: 1s;
+}
+
+@keyframes fadeOutTop {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes moveFromBottom {
+    from {
+        transform: translateY(800px)
+    }
+}
+
+footer .icons{
+text-align: center;
+width: 100%;
+}
+@media only screen and (max-width: 480px) {
+footer .icons {
+    left:0;
+}
+
+}
